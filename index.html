@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>IT Website</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div class="wrap-1">
+          <div class="container">
+               <header class="flex justify-bet align-center">
+                    <h1><a href="index.html">IT Website</a></h1>
+                    <button class="menu"><span class="fa fa-bars"></span></button>
+                    <nav>
+                         <ul class="flex">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="portfolio.html">Portfolio</a></li>
+                              <li><a href="expertise.html">Expertise</a></li>
+                              <li><a href="clients.html">Clients</a></li>
+                              <li><a href="services.html">Services</a></li>
+                              <li><a href="contact.html">Contact Us</a></li>
+                         </ul>
+                    </nav>
+               </header>
+               <div class="banner" role="banner">banner</div>
+          </div>
+     </div>
+     <main class="wrap-2">
+          <div class="container">
+               main
+          </div>
+     </main>
+     <footer class="wrap-3">
+          <div class="container">
+               footer
+          </div>
+     </footer>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<script>
+$(function(){
+     $(".menu").click(function(){
+          $(this).children('span').addClass("fa-xmark")
+     });
+});
+</script>
+</body>
+</html>
