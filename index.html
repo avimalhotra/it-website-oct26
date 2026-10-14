@@ -25,12 +25,60 @@
                          </ul>
                     </nav>
                </header>
-               <div class="banner" role="banner">banner</div>
+               <div class="banner" role="banner">
+                    <div class="row">
+                         <div class="col-6 col-m-12">
+                              <div class="banner-text">
+                                   <h2>Software solution providers that help brands thrive and stand out</h2>
+                                   <p>Since 2014, we have been exploring the world of design and development offering our expertise in web and mobile. It is perfect fusion of innovation, development and execution at one place.</p>
+                                   <a href="">EXPLORE MORE</a>
+                              </div>
+                         </div>
+                         <div class="col-6 col-m-12 col-m-before">
+                              <img src="img/service-icon.webp" alt="" srcset="img/service-icon-2x.webp 1.25x" width="535" height="499" class="img-resp">
+                         </div>
+                    </div>
+               </div>
           </div>
      </div>
      <main class="wrap-2">
           <div class="container">
-               main
+               <article class="services">
+                    <div class="text-center">
+                         <h2>SERVICES</h2>
+                         <p>We provide All-in-one Solution <br> for every IT job</p>
+                    </div>
+                    <div class="row">
+                         <div class="col-3 col-t-6 col-p-12">
+                              <section class="bt">
+                                   <h3>Software Development</h3>
+                                   <p class="op6">Posuere morbi leo urna molestie at elementum eu egestas.</p>
+                                   <a href="">Learn more <span class="fa fa-angle-right"></span></a>
+                              </section>
+                         </div>
+                         <div class="col-3 col-t-6 col-p-12">
+                              <section class="bg-blue">
+                                   <h3>AI Programmer & Technical</h3>
+                                   <p class="op6">Posuere morbi leo urna molestie at elementum eu egestas.</p>
+                                   <a href="">Learn more <span class="fa fa-angle-right"></span></a>
+                              </section>
+                         </div>
+                         <div class="col-3 col-t-6 col-p-12">
+                              <section>
+                                   <h3>System Application Development</h3>
+                                   <p class="op6">Posuere morbi leo urna molestie at elementum eu egestas.</p>
+                                   <a href="">Learn more <span class="fa fa-angle-right"></span></a>
+                              </section>
+                         </div>
+                         <div class="col-3 col-t-6 col-p-12">
+                              <section>
+                                   <h3>Server and Network Solutions</h3>
+                                   <p class="op6">Posuere morbi leo urna molestie at elementum eu egestas.</p>
+                                   <a href="">Learn more <span class="fa fa-angle-right"></span></a>
+                              </section>
+                         </div>
+                    </div>
+               </article>
           </div>
      </main>
      <footer class="wrap-3">
@@ -42,7 +90,9 @@
 <script>
 $(function(){
      $(".menu").click(function(){
-          $(this).children('span').addClass("fa-xmark")
+          $(this).children('span').toggleClass("fa-bars");
+          $(this).children('span').toggleClass("fa-times");
+          $("nav").slideToggle();
      });
 });
 </script>

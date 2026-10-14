@@ -21,6 +21,9 @@ body{ font: 16px "Poppins", sans-serif; }
 
 /* utilities */
 .container{ max-width: 1260px; margin: auto; padding: 0 1rem;}
+.img-resp{ max-width: 100%; height: auto;}
+.op6{ opacity: 0.6;}
+.text-center{ text-align: center;}
 .flex{ display: flex; }
 .align-center{ align-items: center; }
 .justify-bet{ justify-content: space-between; }
@@ -50,16 +53,26 @@ header{ padding: 6rem 0;}
 .wrap-1 nav ul{ gap: 3rem;}
 .wrap-1 nav a{ font-size: 14px; font-weight: 600;}
 .menu{ display: none; background: none; border: 1px solid; padding: .5rem 1rem; color: var(--white); font-size: 20px; border-radius: 5px; }
+.banner-text{ max-width: 473px;}
+.banner-text h2{ font-size: 28px; font-weight: 600; }
+.banner-text p{ line-height: 1.7; margin: 3rem 0 4rem; }
+.banner-text a{ font-weight: 600; display: block; width: 185px; line-height: 50px; background: var(--white); color: var(--db); border-radius: 5px; text-align: center;}
 
 
 
-
-.wrap-2{ background: var(--white); }
+.wrap-2{ background: var(--white); padding: 10rem 0; }
+main h2{ font-size: 20px; font-weight: 500; margin-bottom: 1rem; color: var(--db); }
+main h2+p{ font-size: 28px; font-weight: 700;}
+.services .row{ margin-top: 4rem; }
+.services section{ box-shadow: 0 0 13px #0000001a; height: 100%; padding: 30px 61px 41px 30px; border-radius: 5px; border-top: 15px solid transparent; }
+.services section.bg-blue{ background: var(--db); color: var(--white);}
+.services section.bt{ border-top-color: var(--db);}
+.services section h3{  font-size: 20px; font-weight: 600; }
+.services section p{ font-size: 14px; margin: 2rem 0 3rem; }
+.services section a{ color: inherit; font-size: 14px; }
 
 
 .wrap-3{ background: var(--db); color: var(--white); }
-
-
 
 
 
@@ -98,7 +111,9 @@ header{ padding: 6rem 0;}
 .col-m-10{ grid-column: span 10;}
 .col-m-11{ grid-column: span 11;}
 .col-m-12{ grid-column: span  12;}  
-nav{ display: none;}
+.col-m-before{ order: -1; }
+nav{ display: none; position: absolute; top: 120px; right: 0; left: 0; background: #13257799; text-align: right; }
+nav ul{ flex-flow: column; padding: 1rem; }
 .menu{ display: inline-block;}
 }
 
