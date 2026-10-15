@@ -25,6 +25,8 @@ body{ font: 16px "Poppins", sans-serif; }
 .op6{ opacity: 0.6;}
 .text-center{ text-align: center;}
 .flex{ display: flex; }
+.gap1{ gap:1rem}
+.gap2{ gap: 2rem;}
 .align-center{ align-items: center; }
 .justify-bet{ justify-content: space-between; }
 .justify-mid{ justify-content: center; }
@@ -63,6 +65,7 @@ header{ padding: 6rem 0;}
 .wrap-2{ background: var(--white); padding: 10rem 0; }
 main h2{ font-size: 20px; font-weight: 500; margin-bottom: 1rem; color: var(--db); }
 main h2+p{ font-size: 28px; font-weight: 700;}
+
 .services .row{ margin-top: 4rem; }
 .services section{ box-shadow: 0 0 13px #0000001a; height: 100%; padding: 30px 61px 41px 30px; border-radius: 5px; border-top: 15px solid transparent; }
 .services section.bg-blue{ background: var(--db); color: var(--white);}
@@ -71,9 +74,41 @@ main h2+p{ font-size: 28px; font-weight: 700;}
 .services section p{ font-size: 14px; margin: 2rem 0 3rem; }
 .services section a{ color: inherit; font-size: 14px; }
 
+.info{ margin: 10rem 0; text-align: center; }
+.info b{ font-size: 24px; font-weight: 600;}
+.info p{ font-size: 14px; font-weight: 500;}
+
+.about{ margin: 10rem 0;}
+.about .op6{ margin: 2rem 0 3rem; font-size: 14px;}
+.about ul{ list-style: disc; padding-left: 2rem; line-height: 4rem; font-weight: 500; font-size: 14px;}
+
+.works .tabs{ margin-top: 4rem; }
+.works .collapse{ display: none;}
+.works li.active .collapse{ display: block;}
+.tabs a.vert{ display: block;  writing-mode: sideways-lr; line-height: 81px; height: 300px; text-align: center; font-size: 24px; font-weight: 500; color: var(--db); box-shadow: 0 0 18px #0000001a; border-radius: 5px; border: 2px solid transparent; }
+.tab-img{ flex-shrink: 0;}
+.tabs li.active a.vert,.tabs li:hover a.vert{ border-color: var(--db); }
+.tabs h3{ font-size: 24px; font-weight: 500;}
+.tab-text p.op6{ margin: 1rem 0 2rem; }
+.tab-text a{font-size: 14px; background:var(--db); display: block; width: 184px; line-height: 51px; color: var(--white); border-radius: 5px; text-align: center;}
+
+.testimonials{ margin: 10rem 0;}
+.reviews{ margin-top: 4rem; text-align: center;}
+.reviews .shadow{ box-shadow: 0 0 18px #0000001a; padding: 6rem 64px 0; }
+.ratings{ margin-top: 2rem;}
+.ratings span{ color: var(--lgray); font-size: 22px;}
+.ratings span.star-fill{ color: var(--yellow);}
+.testimonials img{ transform: translateY(34px);}
+.testimonials h3{ margin-top: 54px; font-size: 16px; font-weight: 600;}
+.testimonials h3 + p{ font-size: 14px; }
+
+.projects{ }
+.project-text{ padding:0 4rem 0 8rem }
+.project-text p{ margin: 2rem 0;}
+.project-text a{  display: block; width: 214px; line-height: 51px; background: var(--db); color: var(--white); border-radius: 5px; text-align: center;}
+
 
 .wrap-3{ background: var(--db); color: var(--white); }
-
 
 
 
@@ -81,6 +116,7 @@ main h2+p{ font-size: 28px; font-weight: 700;}
 /* responsive */
 @media screen and (max-width:1279px){
      .wrap-1 nav ul{ gap: 2rem;}
+     .reviews .shadow{ padding-inline: 24px;}
 }
 
 @media screen and (max-width:980px){
@@ -96,6 +132,8 @@ main h2+p{ font-size: 28px; font-weight: 700;}
 .col-t-10{ grid-column: span 10;}
 .col-t-11{ grid-column: span 11;}
 .col-t-12{ grid-column: span  12;}
+.works .tabs, .tabs li.flex{ flex-flow: column;}
+.tabs a.vert{ writing-mode: horizontal-tb; height: auto; }
 }
 
 @media screen and (max-width:767px){
@@ -130,4 +168,5 @@ nav ul{ flex-flow: column; padding: 1rem; }
 .col-p-10{ grid-column: span 10;}
 .col-p-11{ grid-column: span 11;}
 .col-p-12{ grid-column: span  12;}  
+.works .collapse .flex{ flex-flow: column;}
 }
